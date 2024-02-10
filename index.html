@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>SUBASTAS</title>
+    <meta charset="UTF-8">
+    <title>SUBASTAS</title>
     <style>
-		.container {
-			margin-bottom: 10px; /* Espacio entre cada sección */
-		}
-	</style>
+        .container {
+            margin-bottom: 10px; /* Espacio entre cada sección */
+        }
+    </style>
 </head>
 <body>
-    <h1>Mensaje del servidor: <span id="mensajeS"></span></h1>
-    <h1 id="mensajeT"> </h1>
+    <h1>Mensaje del servidor: <span id="mensajeS">Valor actual: 100000</span></h1>
+    <h1 id="mensajeT">Quedan 30 s para finalizar la subasta</h1>
 
     <div class="container">
         <label for="txtC1">Usuario 1:</label>
         <input type="text" id="txtC" name="txtC">
-        <button onclick="evento1()">Enviar Oferta</button>
+        <button onclick="evento('txtC')">Enviar Oferta</button>
     </div>
-
 
     <div class="container">
         <label for="txtC2">Usuario 2:</label>
         <input type="text" id="txtC1" name="txtC1">
-        <button onclick="evento2()">Enviar oferta</button>
+        <button onclick="evento('txtC1')">Enviar oferta</button>
     </div>
 
     <div class="container">
         <label for="txtC3">Usuario 3:</label>
         <input type="text" id="txtC2" name="txtC2">
-        <button onclick="evento3()">Enviar oferta</button>
+        <button onclick="evento('txtC2')">Enviar oferta</button>
     </div>
-    
-	<script src="app.js"></script>
 
+    <script src="app.js"></script>
 </body>
 </html>
