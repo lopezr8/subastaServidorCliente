@@ -2,9 +2,13 @@ let activo = true;
 
 function evento(inputId) {
     let valor = parseInt(document.getElementById(inputId).value);
-    if (!isNaN(valor)) {
-        comparar(valor, server.precio);
+    if(activo){
+        if (!isNaN(valor)) {
+            comparar(valor, server.precio);
+        }
+
     }
+    return;
 }
 
 function comparar(vc, vs) {
@@ -44,9 +48,9 @@ class Servidor {
     }
 
     resetTimer() {
-        this.segundos = 30;
+        this.segundos = 10;
     }
 }
 
-let server = new Servidor(100000, 30);
+let server = new Servidor(100000, 10);
 server.getVActual();
