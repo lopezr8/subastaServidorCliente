@@ -10,25 +10,26 @@
 	</style>
 </head>
 <body>
-    <h1>Mensaje del servidor:</h1>
+    <h1>Mensaje del servidor: <span id="mensajeS"></span></h1>
+    <h1 id="mensajeT"> </h1>
 
     <div class="container">
         <label for="txtC1">Usuario 1:</label>
-        <input type="text" id="txtC1" name="txtC1">
-        <button type="submit">Enviar Oferta</button>
+        <input type="text" id="txtC" name="txtC">
+        <button onclick="evento1()">Enviar Oferta</button>
     </div>
 
 
     <div class="container">
         <label for="txtC2">Usuario 2:</label>
-        <input type="text" id="txtC2" name="txtC2">
-        <button type="submit">Enviar oferta</button>
+        <input type="text" id="txtC1" name="txtC1">
+        <button onclick="evento2()">Enviar oferta</button>
     </div>
 
     <div class="container">
         <label for="txtC3">Usuario 3:</label>
-        <input type="text" id="txtC3" name="txtC3">
-        <button type="submit">Enviar oferta</button>
+        <input type="text" id="txtC2" name="txtC2">
+        <button onclick="evento3()">Enviar oferta</button>
     </div>
     
 	<script src="app.js"></script>
