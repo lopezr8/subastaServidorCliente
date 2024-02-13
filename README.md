@@ -1,2 +1,3 @@
-#PASOS. 
-*abrir el index 
+#PASOS
+
+ * abrir el index 
